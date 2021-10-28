@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-28T21:40:33.738Z",
+    "end": "2021-10-28T21:40:47.121Z",
+    "duration": 13383,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c6b1cdec-dd7c-4db2-af51-f45e88eed1a8",
+      "title": "",
+      "fullFile": "cypress/integration/sorteador/index.spec.js",
+      "file": "cypress/integration/sorteador/index.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+          "title": "Suite de testes: Testar funcionalidades do site Project D6",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cenario de testes: testando se o dado D6 tem resultado menor que 7",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: testando se o dado D6 tem resultado menor que 7",
+              "timedOut": null,
+              "duration": 3556,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('[onclick=\"onClick(6)\"]').click();\ncy.get('#result').invoke(\"text\").then(parseFloat).should(\"be.below\", 7);",
+              "err": {},
+              "uuid": "44ec24e4-9d91-401b-ab11-aded3a1621c2",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: testando se o dado D6 tem resultado maior que 0",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: testando se o dado D6 tem resultado maior que 0",
+              "timedOut": null,
+              "duration": 474,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('[onclick=\"onClick(6)\"]').click();\ncy.get('#result').invoke(\"text\").then(parseFloat).should(\"be.above\", 0);",
+              "err": {},
+              "uuid": "7607f900-7dd5-4a07-8c22-300644686ee4",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: testando o botão de Reset",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: testando o botão de Reset",
+              "timedOut": null,
+              "duration": 438,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('[onclick=\"reset()\"]').click();\ncy.get('#result').should(\"contain.text\", \"0\");",
+              "err": {},
+              "uuid": "7e007e94-98f3-4655-aef9-faf65aba9c98",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: testando o botão Negativo",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: testando o botão Negativo",
+              "timedOut": null,
+              "duration": 491,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('[onclick=\"modifySignal(false)\"]').click();\ncy.get('[onclick=\"onClick(8)\"]').click();\ncy.get('#result').invoke(\"text\").then(parseFloat).should(\"be.below\", 0);",
+              "err": {},
+              "uuid": "b0af1284-1541-4c05-8feb-37973bb6bc8d",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: testando o botão Positivo",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: testando o botão Positivo",
+              "timedOut": null,
+              "duration": 657,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('[onclick=\"modifySignal(true)\"]').click();\ncy.get('[onclick=\"onClick(8)\"]').click();\ncy.get('#result').invoke(\"text\").then(parseFloat).should(\"be.above\", 0);",
+              "err": {},
+              "uuid": "893e407d-13f2-471e-b0ba-772e294f2245",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: tentando escrever nos Inputs",
+              "fullTitle": "Suite de testes: Testar funcionalidades do site Project D6 Cenario de testes: tentando escrever nos Inputs",
+              "timedOut": null,
+              "duration": 4952,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/huiwefhuiWEFHUIO/\");\ncy.get('#numbers').type(\"aaaaaaaaaaa\");",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element is `disabled`:\n\n`<input class=\"textview\" id=\"numbers\" name=\"textview\" wrap=\"hard\" disabled=\"\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element is `disabled`:\n\n`<input class=\"textview\" id=\"numbers\" name=\"textview\" wrap=\"hard\" disabled=\"\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureNotDisabled (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:160535:85)\n    at runAllChecks (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:147827:14)\n    at retryActionability (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:147901:16)\n    at tryCatcher (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:165383:61)\n    at whenStable (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:165422:14)\n    at https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:164909:18\n    at tryCatcher (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:11329:18)\n    at Promise._fulfill (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:11273:18)\n    at https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/runner/cypress_runner.js:12887:46\nFrom Your Spec Code:\n    at Context.eval (https://ctigs5dbfi2rgqdzrb63ma-on.drv.tw/__cypress/tests?p=cypress\\integration\\sorteador\\index.spec.js:129:24)",
+                "diff": null
+              },
+              "uuid": "9b146909-134b-4f67-bb4c-9eded3a006c0",
+              "parentUUID": "60263a1d-0a61-4e80-9e6a-2ab797e729b2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44ec24e4-9d91-401b-ab11-aded3a1621c2",
+            "7607f900-7dd5-4a07-8c22-300644686ee4",
+            "7e007e94-98f3-4655-aef9-faf65aba9c98",
+            "b0af1284-1541-4c05-8feb-37973bb6bc8d",
+            "893e407d-13f2-471e-b0ba-772e294f2245"
+          ],
+          "failures": [
+            "9b146909-134b-4f67-bb4c-9eded3a006c0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10568,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
